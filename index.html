@@ -3,164 +3,344 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CA Kuldeepsingh Jhala | Chartered Accountant</title>
-  <meta name="description" content="CA Kuldeepsingh Jhala, Chartered Accountant in Mumbai providing Income Tax, GST, Audit, Compliance and IFRS reporting services." />
-  <meta name="keywords" content="Chartered Accountant Mumbai, CA in Mumbai, Income Tax Consultant Mumbai, GST Consultant Mumbai, Statutory Audit CA Mumbai" />
+  <title>CA Kuldeepsingh Jhala | Chartered Accountant in Practice</title>
+  <meta name="description" content="Professional CA practice website for tax, audit, GST, compliance, secure client data updates, and easy fee payment." />
   <style>
+    :root {
+      --primary: #0f2a44;
+      --accent: #1d4ed8;
+      --light: #f5f8fc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --success: #16a34a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
+      color: var(--text);
+      background: #fff;
       line-height: 1.6;
-      color: #1f2937;
-      background: #ffffff;
     }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
     header {
-      background: #0f2a44;
-      color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
+      background: linear-gradient(135deg, #0f2a44, #173e63);
+      color: #fff;
+      padding: 14px 0 70px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      letter-spacing: 1px;
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #0f2a44;
-      margin-bottom: 20px;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      background: #f3f4f6;
-      margin-bottom: 10px;
-      padding: 12px 16px;
-      border-left: 4px solid #0f2a44;
-    }
-    .contact-box {
-      background: #f9fafb;
-      padding: 25px;
-      border: 1px solid #e5e7eb;
-    }
-    footer {
-      background: #0f2a44;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
+
+    nav a {
+      color: #dbeafe;
+      text-decoration: none;
       font-size: 14px;
+      margin-left: 14px;
     }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 110px;
+      border-radius: 10px;
+      background: #fff;
+      padding: 6px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 42px);
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      color: #dbeafe;
+      font-size: 17px;
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
+
+    .lead {
+      max-width: 800px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: var(--light);
+      border: 1px solid #d9e4f2;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0f2a44;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: #374151;
+    }
+
+    .portal {
+      background: #f8fbff;
+      border-top: 1px solid #dbeafe;
+      border-bottom: 1px solid #dbeafe;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    input, select, textarea, button {
+      font: inherit;
+    }
+
+    input, select, textarea {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 11px 12px;
+      width: 100%;
+    }
+
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 11px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .secondary-btn {
+      background: #0f2a44;
+      text-decoration: none;
+      color: #fff;
+      padding: 11px 16px;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .fee-box {
+      background: #ecfdf3;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 12px;
+      color: #166534;
+      font-weight: bold;
+      display: none;
+    }
+
     .note {
       font-size: 13px;
-      color: #6b7280;
-      margin-top: 20px;
+      color: var(--muted);
+      margin: 8px 0 0;
     }
-      .whatsapp {
+
+    footer {
+      background: var(--primary);
+      color: #dbeafe;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+
+    .whatsapp {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      right: 18px;
+      bottom: 18px;
       background: #25D366;
       color: #fff;
-      padding: 12px 18px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 12px 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 4px;
-    }
-    form button {
-      background: #0f2a44;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
+
+    @media (max-width: 700px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="IMG_3206.jpeg" alt="CA India Logo" style="max-width:120px; margin-bottom:15px;" />
-    <h1>CA Kuldeepsingh Jhala</h1>
-    <p>Chartered Accountant | Tax | Audit | Compliance</p>
+    <div class="container">
+      <nav>
+        <strong>CA Practice Portal</strong>
+        <div>
+          <a href="#services">Services</a>
+          <a href="#portal">Client Access</a>
+          <a href="#payments">Pay Fees</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <img src="CA LOGO_page-0001.jpg" alt="CA logo" />
+        <div>
+          <h1>CA Kuldeepsingh Jhala</h1>
+          <p>Chartered Accountant in Practice for Tax, Audit, Compliance, and Client Support.</p>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Chartered Accountant in Mumbai</h2>
-    <h2>About Me</h2>
-    <p>
-      I am a Chartered Accountant based in Mumbai with professional experience in taxation, audit,
-      statutory compliance, and global financial reporting. I have worked with multinational
-      organizations and assist clients with reliable, ethical, and compliant financial solutions.
-    </p>
-  </section>
-
-  <section id="services" class="services">
-    <p>I provide professional Chartered Accountant services in Mumbai, helping individuals and businesses with taxation, audit, compliance and financial reporting.</p>
+  <section id="services" class="container">
     <h2>Professional Services</h2>
-    <ul>
-      <li>Income Tax Advisory & Compliance</li>
-      <li>Statutory & Tax Audit</li>
-      <li>GST Advisory & Return Filing</li>
-      <li>TDS & Other Statutory Compliances</li>
-      <li>IFRS & Global Reporting Support</li>
-    </ul>
+    <p class="lead">A clear and client-friendly system for financial services where clients can view required documents, track updates, and communicate easily.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Income Tax</h3>
+        <p>ITR filing, tax planning, notices response, and advance tax guidance for individuals and businesses.</p>
+      </article>
+      <article class="card">
+        <h3>GST Compliance</h3>
+        <p>GST registration, monthly/quarterly return filing, reconciliations, and advisory support.</p>
+      </article>
+      <article class="card">
+        <h3>Audit & Assurance</h3>
+        <p>Tax audit, statutory audit support, and financial data validation for regulatory compliance.</p>
+      </article>
+      <article class="card">
+        <h3>TDS & Payroll</h3>
+        <p>TDS returns, payroll compliance, Form 16/16A support, and monthly due-date management.</p>
+      </article>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="portal" class="portal">
+    <div class="container">
+      <h2>Client Access & Data Update</h2>
+      <p class="lead">Clients can use this section to update key details. For full secure login portal, this website can be connected to a cloud CRM/accounting platform in the next step.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Quick Client Information Update</h3>
+          <form id="updateForm">
+            <input type="text" id="clientName" placeholder="Client Name" required />
+            <input type="text" id="pan" placeholder="PAN Number" required />
+            <input type="tel" id="mobile" placeholder="Mobile Number" required />
+            <textarea id="updateNote" rows="4" placeholder="What would you like to update? (Address, bank details, GST info, etc.)" required></textarea>
+            <button type="submit">Send Update Request</button>
+            <p class="note">This sends your update request to WhatsApp for quick processing.</p>
+          </form>
+        </article>
+
+        <article class="card" id="payments">
+          <h3>Pay Professional Fees</h3>
+          <form id="feeForm">
+            <select id="serviceType" required>
+              <option value="">Select service</option>
+              <option value="2500">ITR Filing - ₹2,500</option>
+              <option value="4000">GST Return Support - ₹4,000</option>
+              <option value="7500">Tax Audit Support - ₹7,500</option>
+              <option value="3500">TDS Compliance - ₹3,500</option>
+            </select>
+            <input type="number" id="months" placeholder="No. of months (for recurring service)" min="1" value="1" required />
+            <button type="button" id="calculateFee">Calculate Fee</button>
+            <div id="feeResult" class="fee-box"></div>
+          </form>
+
+          <a class="secondary-btn" href="https://wa.me/918097551294?text=Hello%20Sir%2C%20I%20want%20to%20pay%20professional%20fees.%20Please%20share%20payment%20details." target="_blank" rel="noopener">Get Payment Link / UPI Details</a>
+          <p class="note">You can integrate Razorpay/PayU payment gateway for direct online payment collection.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
     <h2>Contact</h2>
-    <div class="contact-box">
+    <div class="card">
       <p><strong>Name:</strong> CA Kuldeepsingh Jhala</p>
-      <p><strong>Location:</strong> Mumbai</p>
+      <p><strong>Location:</strong> Mumbai, Maharashtra</p>
       <p><strong>Email:</strong> ksjhala401@gmail.com</p>
       <p><strong>Phone:</strong> +91-8097551294</p>
+      <p><strong>Available:</strong> Monday to Saturday, 10:00 AM - 7:00 PM</p>
+      <p class="note">Professional services are offered in line with ICAI guidelines.</p>
     </div>
-
-    <h3 style="margin-top:30px;">Send an Enquiry</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-
-    <p class="note">Professional services are offered as per ICAI guidelines.</p>
   </section>
 
   <footer>
-    © 2026 CA Kuldeepsingh Jhala | Chartered Accountant
+    © 2026 CA Kuldeepsingh Jhala | Chartered Accountant in Practice
   </footer>
 
-<section>
-  <h2>Domain & Hosting</h2>
-  <p><strong>Suggested Domain Names:</strong></p>
-  <ul>
-    <li>www.cakuldeepsinghjhala.com</li>
-    <li>www.kuldeepsinghjhala.in</li>
-    <li>www.cajhala.com</li>
-  </ul>
-  <p>You can host this website for free on GitHub Pages or Netlify, or use paid hosting with any domain provider.</p>
-</section>
+  <a class="whatsapp" href="https://wa.me/918097551294" target="_blank" rel="noopener">WhatsApp</a>
 
-<a class="whatsapp" href="https://wa.me/918097551294" target="_blank">WhatsApp</a>
+  <script>
+    const feeButton = document.getElementById('calculateFee');
+    const feeResult = document.getElementById('feeResult');
 
+    feeButton.addEventListener('click', () => {
+      const serviceFee = Number(document.getElementById('serviceType').value);
+      const months = Number(document.getElementById('months').value);
+
+      if (!serviceFee || !months || months < 1) {
+        feeResult.style.display = 'block';
+        feeResult.textContent = 'Please select a service and valid number of months.';
+        return;
+      }
+
+      const total = serviceFee * months;
+      feeResult.style.display = 'block';
+      feeResult.textContent = `Estimated professional fee: ₹${total.toLocaleString('en-IN')}`;
+    });
+
+    document.getElementById('updateForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const name = encodeURIComponent(document.getElementById('clientName').value);
+      const pan = encodeURIComponent(document.getElementById('pan').value);
+      const mobile = encodeURIComponent(document.getElementById('mobile').value);
+      const note = encodeURIComponent(document.getElementById('updateNote').value);
+
+      const msg = `Client Update Request%0AName: ${name}%0APAN: ${pan}%0AMobile: ${mobile}%0AUpdate: ${note}`;
+      window.open(`https://wa.me/918097551294?text=${msg}`, '_blank');
+    });
+  </script>
 </body>
 </html>
